@@ -1,0 +1,52 @@
+.hero{
+    color: var(--blue);
+    text-align: center;
+    padding: 50px 0px;
+ 
+
+}
+
+.hero h2{
+    font-size: 50px;
+    font-weight: 800;
+
+}
+
+.hero p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.project-table{
+    color: var(--blue);
+}
+table, th, tr, td{
+    border: 1px solid var(--blue);
+      border-collapse: collapse;
+      background-color: var(--yellow);
+      padding: 20px 20px;
+      margin-top: 30px ;
+
+}
+
+
+a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+a:hover{
+    border-bottom: 2px solid var(--blue);
+  
+}
+
+footer{
+    margin-bottom: 0
+}

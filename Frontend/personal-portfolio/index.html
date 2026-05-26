@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <a href="/Frontend/personal-portfolio/index.html">Home</a>
         <a href="/Frontend/personal-portfolio/contact.html">Contact</a>
         <a href="/Frontend/personal-portfolio/project.html">Projects</a>
     </nav>
-    <section>
-        <div>
-            <p>
+    <section class="heropage">
+        <div class="intro">            
+            <p class="greeting">
                 Hi There,
             </p>
             <h2>
@@ -27,20 +29,23 @@
                 Think. Build. Break. Repeat.
             </p>
         </div>
-            <img src="./img/rishika.jpg" alt="Rishika" width="200">
+        <div class="image">
+
+            <img src="./img/rishika.jpg" alt="Rishika" >
+        </div>
     </section>
 
-    <section>
+    <section class="about">
         <h3>About Me</h3>
         <p>
-          <span>"</span>  Hi! I’m a Full Stack Developer passionate about building web applications that actually work (most of the time).I enjoy working on both frontend and backend — from designing clean user interfaces to building strong server-side logic and APIs.I’m currently exploring modern technologies like React, Svelte, Node.js, and databases to create scalable and efficient applications. <span>"</span>
+          <span >"</span>  Hi! I’m a Full Stack Developer passionate about building web applications that actually work (most of the time).I enjoy working on both frontend and backend — from designing clean user interfaces to building strong server-side logic and APIs.I’m currently exploring modern technologies like React, Svelte, Node.js, and databases to create scalable and efficient applications.          <span>"</span>
         </p>
     </section>
-    <section>
+    <section class="skills">
         <h2>
             Skills
         </h2>
-        <div>
+        <div class="skills-list">
             <h3>
                 Frontend: HTML, CSS, JavaScript, React, Svelte
             </h3>
@@ -49,18 +54,29 @@
         </div>
     </section>
     <footer>
-<div>
-    <ul>
-  <a href="/Frontend/personal-portfolio/index.html">Home</a>
-      </li>
-        <li><a href="/Frontend/personal-portfolio/contact.html">Contact</a>
-</li>
-        <li><a href="/Frontend/personal-portfolio/project.html">Projects</a>
-</li>
-    </ul>
-</div>
+        <div class="footer">
 
-        <p>
+            <div class="text">
+                <h2>Rishika Baral</h2>
+                <p>Full Stack Developer</p>
+            </div>
+            
+            <div>
+                <h2 style="margin-bottom: 10px;">Quick Links</h2>
+                
+                <ul>
+                    <li>
+                    <a href="/Frontend/personal-portfolio/index.html">Home</a>
+                </li>
+                <li><a href="/Frontend/personal-portfolio/contact.html">Contact</a>
+                </li>
+                <li><a href="/Frontend/personal-portfolio/project.html">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        
+        <p class="copyright">
             &copy; 2026 Rishika Baral. All rights reserved.
         </p>
 

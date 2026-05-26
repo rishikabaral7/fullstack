@@ -1,0 +1,107 @@
+.hero{
+    color: var(--blue);
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.hero h2{
+    font-size: 50px;
+    font-weight: 800;
+
+}
+
+.hero p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact-info{
+    display: flex;
+    background-color: var(--blue);
+    color: var(--yellow);
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    height: 300px;
+    /* margin-bottom: 30px; */
+    
+}
+
+.details h3{
+font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.details p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.details li{
+    /* list-style: none; */
+    margin-bottom:7px;
+    font-weight: 400;
+}
+.contact-details h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+}
+.contact-details a{
+    color: var(--yellow);
+    text-decoration: none;
+  
+}
+.contact-details p{
+     margin-bottom:7px;
+    font-weight: 400;
+}
+
+.message{
+    background-color: var(--yellow);
+    height: 430px;
+    text-align: center;
+    padding: 30px 80px 30px 80px;
+    
+}
+.message h2{
+    text-align: center;
+    color: var(--blue);
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+label{
+    color: var(--blue);
+    font-size: 18px;
+    font-weight: 800;
+}
+input{
+ width: 30%;
+ height: 40px;
+ border: 1px solid var(--blue);
+ border-radius: 5px;
+}
+
+textarea{
+    width: 30%;
+    height: 100px;
+    margin-top: 10px;
+     border: 1px solid var(--blue);
+     border-radius: 5px;
+
+}
+
+button{
+    background-color: var(--blue);
+    color: var(--yellow);
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    margin-right: 130px;
+
+}

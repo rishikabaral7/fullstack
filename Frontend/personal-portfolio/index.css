@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+:root {
+    --yellow: #F1EDCA;
+    --blue: #4B9DAB;
+}
+
+
+.navbar {
+    /* background-color: var(--yellow); */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    top: 0;
+    position: sticky;
+    background-color: white;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--blue);
+    cursor: pointer;
+
+}
+
+.navbar a:hover {
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+    padding-bottom: 3px;
+}
+
+.heropage {
+    background-color: white;
+    height: 100vh;
+    color: var(--blue);
+    display: flex;
+    flex-direction: row;
+    padding: 50px 50px 0 50px;
+    align-items: center;
+
+}
+
+.intro {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.image {
+    width: 40%
+}
+
+img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.greeting {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.intro {
+    display: flex;
+    gap: 10px;
+}
+
+.intro h2 {
+    font-size: 70px;
+    font-weight: 700;
+
+}
+
+.intro h4 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.intro p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.about {
+    background-color: var(--yellow);
+    height: 200px;
+    padding: 30px 80px 30px 80px;
+    margin-bottom: 40px;
+}
+.about span{
+    color: var(--blue);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.about h3 {
+    text-align: center;
+    color: var(--blue);
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+}
+
+.about p {
+    text-align: center;
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.skills {
+    padding: 30px 80px 30px 80px;
+    margin-bottom: 40px;
+
+}
+
+.skills h2{
+    text-align: center;
+   font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: var(--blue);
+
+
+}
+.skills-list{
+    display:flex;
+    justify-content: space-around;
+    
+    
+}
+.skills-list h3{
+    background-color: var(--yellow);
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    width: 30%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+padding: 0px 10px 0px 20px;
+}
+
+footer{
+    background-color: var(--blue);
+    color: var(--yellow);
+}
+
+.footer{
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    padding: 20px 80px 20px 80px;
+    align-items: center;
+   
+    
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--yellow);
+      
+}
+.footer li{
+     list-style: none;
+       margin-bottom: 5px;
+
+}
+
+.text h2{
+    font-size: 30px;
+    font-weight: 800;
+
+}
+
+.copyright{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 10px;
+}
