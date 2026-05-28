@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body
+    class="w-full min-h-screen flex flex-col md:flex-row justify-center items-center  bg-[url('./img/photo.png')] md:bg-none  bg-cover bg-no-repeat ">
+
+    <div class="hidden md:block md:w-[50%]">
+        <img class="hidden md:block  md:h-[700px] lg:h-full md:w-full xl:h-screen" src="./img/photo.png" alt="">
+    </div>
+    <div class=" md:w-[50%] xl:flex xl:justify-center xl:items-center xl:w-full ">
+
+
+        <form action="submit" class="text-blue-300 md:flex md:justify-center ">
+            
+            <div class=" w-80 lg:w-[500px] bg-[#fff] flex flex-col  justify-center items-center gap-4 py-10  md:py-70">
+                <h2 class=" text-3xl font-extrabold text-center mb-4 xl:text-5xl">Log In</h2>
+                <div class="flex flex-col md:flex-row gap-4 md:gap-1">
+
+                    
+                    
+
+
+                </div>
+                <div class="relative px-10 md:px-0">
+                    <input class="peer w-60 md:w-80 py-2 border-2 border-blue-300 focus:outline-none rounded-xl"
+                        type="email" name="email" placeholder="">
+                    <label
+                        class="absolute left-12 md:left-4 top-2 text-blue-300 peer-focus:-top-3 peer-focus:left-14 peer-focus:bg-[#fff]  md:peer-focus:left-4  pointer-events-none">Email</label>
+                </div>
+                <div class="relative px-10 md:px-0">
+                    <input class="peer w-60 md:w-80 py-2 border-2 border-blue-300 focus:outline-none rounded-xl"
+                        type="password" name="password" placeholder="">
+                    <label
+                        class="absolute left-12 md:left-4 top-2 text-blue-300 peer-focus:-top-3 peer-focus:left-14 peer-focus:bg-[#fff]  md:peer-focus:left-4 pointer-events-none ">Password</label>
+                </div>
+                
+
+            <div class="flex justify-between md:gap-20">
+                <div>
+
+                    <input type="checkbox" name="checkbox">
+                    <label for="checkbox">Remember Me</label>
+                </div>
+                <span><a href="#" class="text-red-600">Forget Password</a></span>
+            </div>
+
+            <button class=" py-2 px-10 bg-blue-300 rounded-2xl mt-4 text-white font-bold font-bold">Login</button>
+        </form>
+
+        <div class="signin-with">
+            <div class="flex flex-col gap-4 mb-5">
+
+                <h4 class="text-center">Or sign in with</h4>
+                <div class="flex justify-center gap-5">
+                    <img class="w-7" src="./img/facebook.png" alt="">
+                    <img class="w-7" src="./img/gmail.png" alt="">
+                    <img class="w-7" src="./img/linkedin.png" alt="">
+                </div>
+            </div>
+
+            <div class="flex justify-between">
+                <p>
+                    Don't have an account?
+                    <a class="text-red-600" href="./register.html">Sign up</a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html> 
