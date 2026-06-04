@@ -3,8 +3,14 @@ import { createContext, useContext, useState } from "react";
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
-  const [users, setUsers] = useState([]);
-  const [currentUser, setCurrentUser] = useState(null);
+  const [users, setUsers] = useState(()=>{
+    const savedUsers = localStorage.getItem('users');
+    return savedUsers? JSON.parse(savedUsers) : [];
+  });
+  const [currentUser, setCurrentUser] = useState(()=>{
+    const savedUser = localStorage.getItem("currentUser");
+    return savedUser? JSON.parse(savedUser) : null;
+  });
 
   const register = (name, email, password) => {
     const newUser = {
@@ -14,7 +20,11 @@ export function AuthProvider({ children }) {
       password,
     };
 
-    setUsers((prev) => [...prev, newUser]);
+    const updatedUsers = [...users, newUser];
+
+    setUsers(updatedUsers);
+
+    localStorage.setItem("users", JSON.stringify(updatedUsers))
   };
 
   const login = (email, password) => {
@@ -26,6 +36,9 @@ export function AuthProvider({ children }) {
 
     if (user) {
       setCurrentUser(user);
+
+      localStorage.setItem("currentUser",JSON.stringify(user));
+
       return true;
     }
 
@@ -34,6 +47,8 @@ export function AuthProvider({ children }) {
 
   const logout = () => {
     setCurrentUser(null);
+
+    localStorage.removeItem("currentUser");
   };
 
   return (
