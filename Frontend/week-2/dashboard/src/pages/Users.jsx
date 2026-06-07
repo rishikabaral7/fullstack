@@ -37,14 +37,14 @@ const Users = () => {
             <th className="border border-gray-300 px-4 py-2">Phone Number</th>
           </tr>
         </thead>
-        <tbody>
-          {!filterUsers.length && (
-            <tr>
-              <td colSpan="7" className="text-center py-4"> No users found.</td>
-            </tr>
-          )}
-          { 
-          
+          <tbody>
+            {!filterUsers.length && (
+              <tr>
+                <td colSpan="7" className="text-center py-4"> No users found.</td>
+              </tr>
+            )}
+            { 
+            
           
           filterUsers?.map((user) => (
             <tr key={user.login.uuid}>
