@@ -28,7 +28,7 @@ const App = () => {
       newError.name = "Name is required";
     }
     if (!formData.email.includes("@")) {
-      newError.email = "Invalid Email";
+      newError.email = "Invalid Email, Email must contain @";
     }
     if (formData.password.length < 6) {
       newError.password = "Password must be atleast 6 character";
