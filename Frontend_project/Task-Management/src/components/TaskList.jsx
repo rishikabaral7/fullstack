@@ -98,7 +98,7 @@ const[error, setError] = useState({});
         onSubmit={handleSubmit}
         className="flex flex-col w-150 h-135 rounded-2xl  gap-3 justify-center items-left px-10 bg-gray-700 py-6">
         <h2 className="text-4xl font-bold mb-3 text-center text-white">
-          Add Task
+          {mode === "edit"?"Edit Task": "Add Task"}
         </h2>
         <input
           name="text"
