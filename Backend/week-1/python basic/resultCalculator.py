@@ -21,4 +21,4 @@ elif percentage >60 and percentage <= 70:
     print("Your grade is B")
 
 else:
-    print("You are Failed")
+    print("You are Failed!")
