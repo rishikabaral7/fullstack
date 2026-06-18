@@ -1,0 +1,4 @@
+task_crud/
+.env
+__pycache__/
+*.pyc
